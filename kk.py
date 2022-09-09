@@ -1,0 +1,3 @@
+
+a = random();
+print(a);
