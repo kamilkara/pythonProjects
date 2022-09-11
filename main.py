@@ -14,7 +14,6 @@ def encrypt():
         iIndex = int(string.printable.index(passList[i])) + int(cipherStep)
         iIndex %= 100
         passCrypted += string.printable[iIndex]
-        i+=1
 
     print("Your encrypted password is {}".format(passCrypted))
 
@@ -32,7 +31,6 @@ def decrypt():
         iIndex = int(string.printable.index(passList[i])) - int(cipherStep)
         iIndex %= 100
         passDecrypted += string.printable[iIndex]
-        i+=1
 
     print("Your decrypted password is {}".format(passDecrypted))
 
@@ -44,3 +42,5 @@ if whatAction == 'e':
     encrypt()
 else:
     decrypt()
+
+
